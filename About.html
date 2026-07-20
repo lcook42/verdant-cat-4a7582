@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — ByteWrench Create</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EEF1EE; --paper-line: rgba(20,32,43,0.06); --ink:#14202B; --ink-soft:#4A5A64;
+    --copper:#C1712F; --copper-dark:#9A5A22; --pcb-green:#2F6B4F; --card:#FCFCFA; --border:#D8DCD4;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background-color:var(--paper);
+    background-image:linear-gradient(var(--paper-line) 1px, transparent 1px), linear-gradient(90deg, var(--paper-line) 1px, transparent 1px);
+    background-size:28px 28px; color:var(--ink); font-family:'IBM Plex Sans', sans-serif; -webkit-font-smoothing:antialiased;}
+  a{color:inherit;}
+  .mono{font-family:'IBM Plex Mono', monospace;}
+  .wrap{max-width:820px; margin:0 auto; padding:0 24px;}
+  header.bar{border-bottom:1px solid var(--border); background:rgba(252,252,250,0.85); backdrop-filter:blur(6px); position:sticky; top:0; z-index:20;}
+  .bar-inner{display:flex; align-items:center; justify-content:space-between; padding:14px 24px; max-width:1180px; margin:0 auto; flex-wrap:wrap; gap:12px;}
+  .brand{font-family:'IBM Plex Sans Condensed', sans-serif; font-weight:700; font-size:20px; letter-spacing:0.02em;}
+  .brand span{color:var(--copper);}
+  nav.pages{display:flex; gap:22px; font-size:12px; letter-spacing:0.06em; text-transform:uppercase;}
+  nav.pages a{text-decoration:none; color:var(--ink-soft); padding-bottom:2px; border-bottom:1px solid transparent;}
+  nav.pages a:hover, nav.pages a.current{color:var(--ink); border-color:var(--copper);}
+  .eyebrow{font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--copper-dark); font-weight:600; margin:56px 0 14px; display:flex; align-items:center; gap:10px;}
+  .eyebrow::before{content:""; width:26px; height:1px; background:var(--copper-dark); display:inline-block;}
+  h1{font-family:'IBM Plex Sans Condensed', sans-serif; font-weight:700; font-size:clamp(32px,6vw,52px); line-height:1; margin:0 0 26px;}
+  .doc p{font-size:16px; line-height:1.7; color:var(--ink-soft); margin:0 0 18px;}
+  .doc strong{color:var(--ink);}
+  .card-block{background:var(--card); border:1px solid var(--border); padding:24px; margin:32px 0; position:relative;}
+  .card-block::before, .card-block::after{content:""; position:absolute; width:10px; height:10px; border:1px solid var(--ink); opacity:0.25;}
+  .card-block::before{top:-1px; left:-1px; border-right:none; border-bottom:none;}
+  .card-block::after{bottom:-1px; right:-1px; border-left:none; border-top:none;}
+  .card-block h3{font-family:'IBM Plex Sans Condensed', sans-serif; font-size:16px; margin:0 0 8px; text-transform:uppercase; letter-spacing:0.04em;}
+  .grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:32px 0 60px;}
+  .grid3 .stat{border:1px solid var(--border); background:var(--card); padding:18px; text-align:center;}
+  .grid3 .stat .num{font-family:'IBM Plex Mono', monospace; font-size:26px; font-weight:600; color:var(--copper-dark);}
+  .grid3 .stat .lbl{font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--ink-soft); margin-top:4px;}
+  footer{border-top:1px solid var(--border); padding:32px 24px 60px; margin-top:60px;}
+  .footer-inner{max-width:1180px; margin:0 auto; display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px; font-size:11px; color:var(--ink-soft);}
+  @media (max-width:640px){ .grid3{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="bar-inner">
+    <div class="brand">BYTEWRENCH <span>CREATE</span></div>
+    <nav class="pages">
+      <a href="index.html">Shop</a>
+      <a href="about.html" class="current">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="shipping.html">Shipping</a>
+      <a href="returns.html">Returns</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="eyebrow">Rev A — About</div>
+  <h1>Built for people who'd<br>rather solder it than<br>read about it.</h1>
+
+  <div class="doc">
+    <p><strong>ByteWrench Create</strong> is a small catalog of soldering tools, dev boards, and hands-on kits for makers, hobbyist engineers, and anyone learning electronics by actually building something.</p>
+    <p>We stock a mix of beginner kits (no soldering experience required), intermediate tools for people leveling up their bench, and advanced gear — RFID research tools, programmable power supplies, radio hardware — for people who already know exactly what they need.</p>
+    <p>Every product is picked for a reason: it either solves a real problem on the bench, teaches something worth knowing, or is just a genuinely good piece of hardware worth having around.</p>
+  </div>
+
+  <div class="card-block">
+    <h3>What we believe</h3>
+    <p style="margin:0; color:var(--ink-soft); line-height:1.6;">Good tools should be honest about what they do. We'd rather sell you the right $9 sensor than the wrong $90 one.</p>
+  </div>
+
+  <div class="grid3">
+    <div class="stat"><div class="num mono">30+</div><div class="lbl">Products</div></div>
+    <div class="stat"><div class="num mono">3</div><div class="lbl">Skill Tiers</div></div>
+    <div class="stat"><div class="num mono">$3–400</div><div class="lbl">Price Range</div></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner mono">
+    <span>BYTEWRENCH CREATE &mdash; PART NO. STORE-01</span>
+    <span>Checkout secured by Shopify</span>
+  </div>
+</footer>
+
+</body>
+</html>
