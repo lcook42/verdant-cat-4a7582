@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Returns — Byte Wrench Create</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EEF1EE; --paper-line: rgba(20,32,43,0.06); --ink:#14202B; --ink-soft:#4A5A64;
+    --copper:#C1712F; --copper-dark:#9A5A22; --pcb-green:#2F6B4F; --card:#FCFCFA; --border:#D8DCD4;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background-color:var(--paper);
+    background-image:linear-gradient(var(--paper-line) 1px, transparent 1px), linear-gradient(90deg, var(--paper-line) 1px, transparent 1px);
+    background-size:28px 28px; color:var(--ink); font-family:'IBM Plex Sans', sans-serif; -webkit-font-smoothing:antialiased;}
+  a{color:inherit;}
+  .mono{font-family:'IBM Plex Mono', monospace;}
+  .wrap{max-width:820px; margin:0 auto; padding:0 24px;}
+  header.bar{border-bottom:1px solid var(--border); background:rgba(252,252,250,0.85); backdrop-filter:blur(6px); position:sticky; top:0; z-index:20;}
+  .bar-inner{display:flex; align-items:center; gap:16px; padding:14px 24px; max-width:1180px; margin:0 auto; flex-wrap:nowrap;}
+  .brand{font-family:'IBM Plex Sans Condensed', sans-serif; font-weight:700; font-size:20px; letter-spacing:0.02em; flex-shrink:0; white-space:nowrap;}
+  .brand span{color:var(--copper);}
+  nav.pages{display:flex; gap:20px; align-items:center; font-size:12px; letter-spacing:0.06em; text-transform:uppercase;
+    overflow-x:auto; white-space:nowrap; flex:1 1 auto; min-width:0; -webkit-overflow-scrolling:touch; scrollbar-width:none;
+    mask-image:linear-gradient(to right, transparent 0, black 12px, black calc(100% - 12px), transparent 100%);}
+  nav.pages::-webkit-scrollbar{display:none;}
+  nav.pages a{text-decoration:none; color:var(--ink-soft); padding-bottom:2px; border-bottom:1px solid transparent; flex-shrink:0;}
+  nav.pages a:hover, nav.pages a.current{color:var(--ink); border-color:var(--copper);}
+  .eyebrow{font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--copper-dark); font-weight:600; margin:56px 0 14px; display:flex; align-items:center; gap:10px;}
+  .eyebrow::before{content:""; width:26px; height:1px; background:var(--copper-dark); display:inline-block;}
+  h1{font-family:'IBM Plex Sans Condensed', sans-serif; font-weight:700; font-size:clamp(32px,6vw,52px); line-height:1; margin:0 0 30px;}
+  .placeholder-note{background:#FFF8EC; border:1px dashed var(--copper); padding:14px 18px; font-size:13px; color:var(--copper-dark); margin-bottom:32px;}
+  h2{font-family:'IBM Plex Sans Condensed', sans-serif; font-size:18px; text-transform:uppercase; letter-spacing:0.03em; margin:36px 0 10px; padding-bottom:8px; border-bottom:1px solid var(--border);}
+  .doc p, .doc li{font-size:15px; line-height:1.7; color:var(--ink-soft);}
+  .doc ul{margin:0 0 18px; padding-left:20px;}
+  .doc strong{color:var(--ink);}
+  footer{border-top:1px solid var(--border); padding:32px 24px 60px; margin-top:60px;}
+  .footer-inner{max-width:1180px; margin:0 auto; display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px; font-size:11px; color:var(--ink-soft);}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="bar-inner">
+    <div class="brand">BYTE WRENCH <span>CREATE</span></div>
+    <nav class="pages">
+      <a href="index.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="shipping.html">Shipping</a>
+      <a href="returns.html" class="current">Returns</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="eyebrow">Rev A — Returns & Refunds</div>
+  <h1>Returns</h1>
+
+  <div class="placeholder-note mono">
+    ⚠ Placeholder policy — confirm your real return window and process, and note that Shopify Collective products are supplier-fulfilled, so return handling may differ per supplier. Verify before publishing.
+  </div>
+
+  <div class="doc">
+    <h2>Return Window</h2>
+    <p>Items may be returned within <strong>[X] days</strong> of delivery for a refund or exchange, provided they're unused and in original packaging.</p>
+
+    <h2>How Supplier-Fulfilled Items Work</h2>
+    <p>Because this store carries products from multiple independent suppliers (via Shopify Collective), return eligibility and process can vary by item. Contact us with your order number and we'll route your return to the right place.</p>
+
+    <h2>Non-Returnable Items</h2>
+    <ul>
+      <li>Items marked as final sale</li>
+      <li>Opened consumable components (solder, sensors used in a build, etc.)</li>
+      <li>[Add any other exclusions specific to your catalog]</li>
+    </ul>
+
+    <h2>Damaged or Defective Items</h2>
+    <p>If something arrives damaged or not working, contact us within <strong>[X] days</strong> of delivery with photos of the issue, and we'll arrange a replacement or refund.</p>
+
+    <h2>How to Start a Return</h2>
+    <p>Email <a href="mailto:hello@bytewrenchcreate.com" style="color:var(--copper-dark); text-decoration:none;">hello@bytewrenchcreate.com</a> with your order number and reason for return. We'll respond with next steps.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner mono">
+    <span>BYTE WRENCH CREATE &mdash; PART NO. STORE-01</span>
+    <span>Checkout secured by Shopify</span>
+  </div>
+</footer>
+
+</body>
+</html>
